@@ -63,3 +63,5 @@ Regardless of the version, all datasets include the final aggregated spreadsheet
 We plan to expand the Figure_Generation/ directory with additional scripts to facilitate figure reproduction and analysis.
 
 For any issues or questions, please feel free to open an issue or reach out.
+
+#### Authors: Ben Piazza, Dániel L Barabási, André Ferreira Castro, Giulia Menichetti, Albert-László Barabási
