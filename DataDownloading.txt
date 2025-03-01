@@ -2,22 +2,32 @@ Data Download Instructions
 
 The datasets used in this research can be accessed from various sources, each maintained by different research institutions and initiatives. Below are the details on where to download them:
 
-FlyWire Skeleton and Synapse Data
-The FlyWire dataset, which includes skeleton and synapse data, can be obtained from the FlyWire Codex, a platform for collaborative proofreading and analysis of fruit fly connectomics. Data can be downloaded directly via the following API link:
-https://codex.flywire.ai/api/download
+C. elegans Connectome Data
+We scraped the OpenWorm’s data release of the hermaphrodite C. elegans adult to obtain skeletons, and utilized associated synaptic tables. As we do not want to encourage further scraping of this wonderful resource, we provide all data as part of this repo.
 
-MM3 Mouse Connectome Data
-The MM3 dataset consists of mouse brain connectivity data extracted from HDF5 files. These files can be downloaded through the "Dataset Download" section on the Brain Image Library webpage:
-https://api.brainimagelibrary.org/web/view?bildid=add-own
+Larval Fly Connectome Data
+We obtained skeletons and synapse locations at request from authors (Albert Cardona), and thus provide all data as part of this repo.
 
 Hemibrain and MANC Connectome Data
 These datasets are provided by the FlyEM team at the Janelia Research Campus. They contain detailed neural connectivity reconstructions for Drosophila. Download links:
     https://www.janelia.org/project-team/flyem/hemibrain
     https://www.janelia.org/project-team/flyem/manc-connectome
 
+FlyWire Skeleton and Synapse Data
+The FlyWire dataset, which includes skeleton and synapse data, can be obtained from the FlyWire Codex, a platform for collaborative proofreading and analysis of fruit fly connectomics. Data can be downloaded directly via the following API link:
+https://codex.flywire.ai/api/download
+
+We used v630.
+
 Zebrafish Connectome Data
 Zebrafish connectivity data is available from the Seung Lab at Princeton University. The dataset can be accessed through their dedicated webpage:
 https://seunglab.org/zebrafish/home/
+
+MM3 Mouse Connectome Data
+The MM3 dataset consists of mouse brain connectivity data extracted from HDF5 files. These files can be downloaded through the "Dataset Download" section on the Brain Image Library webpage:
+https://api.brainimagelibrary.org/web/view?bildid=add-own
+
+We used v661.
 
 H01 Human Cortex Data
 The H01 dataset, a large-scale connectomic reconstruction of human cortex, is provided by the Lichtman Lab at Harvard University in collaboration with Google’s connectomics team. Data can be accessed here:
