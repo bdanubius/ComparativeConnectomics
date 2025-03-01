@@ -1,10 +1,8 @@
 # Physical Network Constraints Define the Lognormal Architecture of the Brain's Connectome
 
-## Overview
-
 Thank you for your interest in our project. 
 
-This repository contains code and data used in our paper, organized into several directories for ease of use. Below is a description of the folder structure and contents.
+This repository contains the code and data access to reproduce the results of [our paper](https://www.biorxiv.org/content/10.1101/2025.02.27.640551v1), organized into several directories for ease of use. Below is a description of the folder structure and contents.
 
 ## Directory Structure
 
@@ -12,10 +10,10 @@ This repository contains code and data used in our paper, organized into several
 
 This directory contains subfolders for each system (e.g., Larva, FlyWire). Within each system’s subdirectory, there are two folders:
 
-### Skeletons/ 
+#### Skeletons/ 
 – Raw skeleton data (.swc files) for each dataset.
 
-### Synapses/ 
+#### Synapses/ 
 – Raw synapse data for each dataset.
 
 ### Processing/
@@ -24,7 +22,7 @@ This directory contains six subfolders, corresponding to different stages of dat
 
 1. SWC Processing – Converts .swc files into a set of connected chains or segments by splitting the skeleton tree at nodes with degree ≥ 3.
 
-2. Synapse Processing – Matches each synapse point to the nearest neighbor in the corresponding skeleton.
+2. Synapse Processing – Matches each synapse point to the nearest position in the corresponding skeleton.
 
 3. Geometry Processing – Computes geometric properties (length, curvature, torsion) from processed .swc data and saves aggregated data in .mat format.
 
