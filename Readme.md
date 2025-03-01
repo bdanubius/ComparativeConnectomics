@@ -1,20 +1,24 @@
-README
+# Physical Network Constraints Define the Lognormal Architecture of the Brain's Connectome
 
-Overview
+## Overview
 
-Thank you for your interest in our project. This repository contains code and data used in our paper, organized into several directories for ease of use. Below is a description of the folder structure and contents.
+Thank you for your interest in our project. 
 
-Directory Structure
+This repository contains code and data used in our paper, organized into several directories for ease of use. Below is a description of the folder structure and contents.
 
-Datasets/
+## Directory Structure
+
+### Datasets/
 
 This directory contains subfolders for each system (e.g., Larva, FlyWire). Within each system’s subdirectory, there are two folders:
 
-Skeletons/ – Raw skeleton data (.swc files) for each dataset.
+### Skeletons/ 
+– Raw skeleton data (.swc files) for each dataset.
 
-Synapses/ – Raw synapse data for each dataset.
+### Synapses/ 
+– Raw synapse data for each dataset.
 
-Processing/
+### Processing/
 
 This directory contains six subfolders, corresponding to different stages of data processing:
 
@@ -30,11 +34,11 @@ This directory contains six subfolders, corresponding to different stages of dat
 
 6. Filtering – Applies dataset-specific filtering for Hemibrain, MANC, and FlyWire as specified in the supplementary information.
 
-Processed_Data/
+### Processed_Data/
 
 This directory contains data at various stages of processing. Running the scripts in Processing/ will populate this directory with intermediate and final processed data.
 
-Figure_Generation/
+### Figure_Generation/
 
 This directory contains scripts for generating figures using the processed data:
 
@@ -44,11 +48,11 @@ Helper Functions – Contains additional functions used for plotting.
 
 More figure scripts will be added in the future.
 
-Figures/
+### Figures/
 
 This directory stores the .PDF figures generated from the scripts in Figure_Generation/.
 
-Usage Notes
+## Usage Notes
 
 If you have downloaded the GitHub version of this project, only the Larva dataset preprocessing scripts and figure generation will be fully functional.
 
@@ -56,7 +60,7 @@ If you have downloaded the full dataset, all scripts should work as expected, in
 
 Regardless of the version, all datasets include the final aggregated spreadsheets (From Step 5: Data Aggregation), enabling figure reproduction.
 
-Future Updates
+## Future Updates
 
 We plan to expand the Figure_Generation/ directory with additional scripts to facilitate figure reproduction and analysis.
 
