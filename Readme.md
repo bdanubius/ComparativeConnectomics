@@ -24,7 +24,7 @@ This directory contains six subfolders, corresponding to different stages of dat
 
 2. Synapse Processing – Matches each synapse point to the nearest position in the corresponding skeleton.
 
-3. Geometry Processing – Computes geometric properties (length, curvature, torsion) from processed .swc data and saves aggregated data in .mat format.
+3. Geometry Processing – Computes length and geometric properties from processed .swc data and saves aggregated data in .mat format.
 
 4. Degree Processing – Uses synapse data to count the degree and total synapses for each neuron.
 
@@ -52,7 +52,9 @@ This directory stores the .PDF figures generated from the scripts in Figure_Gene
 
 ## Usage Notes
 
-If you have downloaded the GitHub version of this project, only the Larva dataset preprocessing scripts and figure generation will be fully functional.
+All scripts need to be run from the directory they are stored in. Matlab should do this automatically, but in the event the directories are different cd to the script directories before running.
+
+If you have downloaded the GitHub version of this project, only the _Drosophila_ Larva and _C. elegans_ dataset preprocessing scripts and figure generation will be fully functional.
 
 If you have downloaded the full dataset, all scripts should work as expected, including data and processed results.
 
