@@ -54,6 +54,8 @@ This directory stores the .PDF figures generated from the scripts in Figure_Gene
 
 All scripts need to be run from the directory they are stored in. Matlab should do this automatically, but in the event the directories are different cd to the script directories before running.
 
+The code is written in _Windows_, meaning that if you are using _Linux_ or _MacOS_ you have to replace '\'s with '/'s in the file structure statements. 
+
 If you have downloaded the GitHub version of this project, only the _Drosophila_ Larva and _C. elegans_ dataset preprocessing scripts and figure generation will be fully functional.
 
 If you have downloaded the full dataset, all scripts should work as expected, including data and processed results.
