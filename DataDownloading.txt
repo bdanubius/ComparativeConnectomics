@@ -6,7 +6,9 @@ C. elegans Connectome Data
 We scraped the OpenWorm’s data release of the hermaphrodite C. elegans adult to obtain skeletons, and utilized associated synaptic tables. As we do not want to encourage further scraping of this wonderful resource, we provide all data as part of this repo.
 
 Larval Fly Connectome Data
-We obtained skeletons and synapse locations at request from authors (Albert Cardona), and thus provide all data as part of this repo.
+The Larval Fly Connectome hosting details are provided at the following link: https://virtualflybrain.org/about/hosted/l1em-catmaid/
+The code associated with the 2023 Science paper provides scripts for downloading morphologies and synapses: https://zenodo.org/records/7473718
+For convenience, and to provide an example data for our analysis pipeline, we provide all morphology and synapse data as part of this repo.
 
 Hemibrain and MANC Connectome Data
 These datasets are provided by the FlyEM team at the Janelia Research Campus. They contain detailed neural connectivity reconstructions for Drosophila. Download links:
