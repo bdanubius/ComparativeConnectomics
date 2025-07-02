@@ -29,8 +29,10 @@ MM3 Mouse Connectome Data
 The MM3 dataset consists of mouse brain connectivity data extracted from HDF5 files. These files can be downloaded through the "Dataset Download" section on the Brain Image Library webpage:
 https://api.brainimagelibrary.org/web/view?bildid=add-own
 
-We used v661.
+This corresponds to v661 on the Microns website, for which algorithmic access is described here: https://tutorial.microns-explorer.org/quickstart_notebooks/07-cave-download-skeleton.html
 
 H01 Human Cortex Data
 The H01 dataset, a large-scale connectomic reconstruction of human cortex, is provided by the Lichtman Lab at Harvard University in collaboration with Google’s connectomics team. Data can be accessed here:
 https://h01-release.storage.googleapis.com/data.html
+
+We downloaded the Common layers version.
