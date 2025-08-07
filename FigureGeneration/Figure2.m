@@ -65,6 +65,13 @@ neuron_counts = neuron_counts(dataset_shuffle_vector);
 bounding_volumes = bounding_volumes(dataset_shuffle_vector);
 brain_volumes = brain_volumes(dataset_shuffle_vector);
 
+sub_shuffle_vector = [6,7,5,4,3,2,1];
+
+Local_Dens_Data = load("Local_Dens_Data.mat");
+Local_Dens_Data = Local_Dens_Data.Artificial_Dens_Data;
+
+Local_Dens_Data = Local_Dens_Data(sub_shuffle_vector,:);
+
 table_data = cell(8,1);
 
 cd ..
@@ -156,7 +163,7 @@ cd ..
 cd ..
 cd FigureGeneration\HelperFunctions
 
-%% Figure 2A
+%% Figure 2J
 
 fig = figure('Renderer', 'painters', 'Position', [10 10 900 600]);
 
@@ -273,14 +280,14 @@ set(gcf, 'PaperUnits', 'inches');
 set(gcf, 'PaperSize', [pos(3)/100, pos(4)/100]);
 set(gcf, 'PaperPosition', [0 0 pos(3)/100 pos(4)/100]);
 set(gcf, 'PaperPositionMode', 'auto');
-print('2A.pdf', '-dpdf', '-painters', '-bestfit');
+print('2J.pdf', '-dpdf', '-painters', '-bestfit');
 %print('DegDistAll_NoLine.eps', '-depsc', '-painters');
 
 cd ..
 cd ..
 cd FigureGeneration/HelperFunctions
 
-%% Figure 2D
+%% Figure 2G
 
 fig = figure('Renderer', 'painters', 'Position', [10 10 900 600]);
 
@@ -394,13 +401,13 @@ set(gcf, 'PaperUnits', 'inches');
 set(gcf, 'PaperSize', [pos(3)/100, pos(4)/100]);
 set(gcf, 'PaperPosition', [0 0 pos(3)/100 pos(4)/100]);
 set(gcf, 'PaperPositionMode', 'auto');
-print('2D.pdf', '-dpdf', '-painters', '-bestfit');
+print('2G.pdf', '-dpdf', '-painters', '-bestfit');
 
 cd ..
 cd ..
 cd FigureGeneration/HelperFunctions
 
-%% Figure 2G
+%% Figure 2A
 
 fig = figure('Renderer', 'painters', 'Position', [10 10 900 600]);
 
@@ -516,13 +523,13 @@ set(gcf, 'PaperUnits', 'inches');
 set(gcf, 'PaperSize', [pos(3)/100, pos(4)/100]);
 set(gcf, 'PaperPosition', [0 0 pos(3)/100 pos(4)/100]);
 set(gcf, 'PaperPositionMode', 'auto');
-print('2G.pdf', '-dpdf', '-painters', '-bestfit');
+print('2A.pdf', '-dpdf', '-painters', '-bestfit');
 
 cd ..
 cd ..
 cd FigureGeneration/HelperFunctions
 
-%% Figure 2B
+%% Figure 2K
 
 figure('Renderer', 'painters', 'Position', [10 10 900 600])
 
@@ -629,13 +636,13 @@ set(gcf, 'PaperUnits', 'inches');
 set(gcf, 'PaperSize', [pos(3)/100, pos(4)/100]);
 set(gcf, 'PaperPosition', [0 0 pos(3)/100 pos(4)/100]);
 set(gcf, 'PaperPositionMode', 'auto');
-print('2B.pdf', '-dpdf', '-painters', '-bestfit');
+print('2K.pdf', '-dpdf', '-painters', '-bestfit');
 
 cd ..
 cd ..
 cd FigureGeneration/HelperFunctions
 
-%% Figure 2E
+%% Figure 2H
 
 figure('Renderer', 'painters', 'Position', [10 10 900 600])
 
@@ -741,13 +748,13 @@ set(gcf, 'PaperUnits', 'inches');
 set(gcf, 'PaperSize', [pos(3)/100, pos(4)/100]);
 set(gcf, 'PaperPosition', [0 0 pos(3)/100 pos(4)/100]);
 set(gcf, 'PaperPositionMode', 'auto');
-print('2E.pdf', '-dpdf', '-painters', '-bestfit');
+print('2H.pdf', '-dpdf', '-painters', '-bestfit');
 
 cd ..
 cd ..
 cd FigureGeneration/HelperFunctions
 
-%% Figure 2H
+%% Figure 2B
 
 figure('Renderer', 'painters', 'Position', [10 10 900 600])
 
@@ -847,13 +854,13 @@ set(gcf, 'PaperUnits', 'inches');
 set(gcf, 'PaperSize', [pos(3)/100, pos(4)/100]);
 set(gcf, 'PaperPosition', [0 0 pos(3)/100 pos(4)/100]);
 set(gcf, 'PaperPositionMode', 'auto');
-print('2H.pdf', '-dpdf', '-painters', '-bestfit');
+print('2B.pdf', '-dpdf', '-painters', '-bestfit');
 
 cd ..
 cd ..
 cd FigureGeneration/HelperFunctions
 
-%% 2C
+%% 2L
 
 KSSTATs_All = cell(length(table_data),1);
 
@@ -1007,13 +1014,13 @@ set(gcf, 'PaperUnits', 'inches');
 set(gcf, 'PaperSize', [pos(3)/100, pos(4)/100]);
 set(gcf, 'PaperPosition', [0 0 pos(3)/100 pos(4)/100]);
 set(gcf, 'PaperPositionMode', 'auto');
-print('2C.pdf', '-dpdf', '-painters', '-bestfit');
+print('2L.pdf', '-dpdf', '-painters', '-bestfit');
 
 cd ..
 cd ..
 cd FigureGeneration/HelperFunctions
 
-%% 2F
+%% 2I
 
 default_colors = [0 0.4470 0.7410;0.8500 0.3250 0.0980;0.9290 0.6940 0.1250;0.4940 0.1840 0.5560];
 
@@ -1066,13 +1073,13 @@ set(gcf, 'PaperUnits', 'inches');
 set(gcf, 'PaperSize', [pos(3)/100, pos(4)/100]);
 set(gcf, 'PaperPosition', [0 0 pos(3)/100 pos(4)/100]);
 set(gcf, 'PaperPositionMode', 'auto');
-print('2F.pdf', '-dpdf', '-painters', '-bestfit');
+print('2I.pdf', '-dpdf', '-painters', '-bestfit');
 
 cd ..
 cd ..
 cd FigureGeneration/HelperFunctions
 
-%% Figure 2I
+%% Figure 2C
 
 fig = figure('Renderer', 'painters', 'Position', [10 10 900 600]);
 
@@ -1118,7 +1125,316 @@ set(gcf, 'PaperUnits', 'inches');
 set(gcf, 'PaperSize', [pos(3)/100, pos(4)/100]);
 set(gcf, 'PaperPosition', [0 0 pos(3)/100 pos(4)/100]);
 set(gcf, 'PaperPositionMode', 'auto');
-print('2I.pdf', '-dpdf', '-painters', '-bestfit');
+print('2C.pdf', '-dpdf', '-painters', '-bestfit');
+
+cd ..
+cd ..
+cd FigureGeneration/HelperFunctions
+
+%% Figure 2D
+
+fig = figure('Renderer', 'painters', 'Position', [10 10 900 600]);
+
+mu = [];
+sigma = [];
+deviation = [];
+mean_val = [];
+mse = [];
+
+subplot1(2,4,'Gap',[0.03 0.16])
+
+legend_strings = [];
+for i=2:length(table_data)
+    
+    subplot1(i)
+    
+    hold on
+    
+    xdata = Local_Dens_Data{i-1,1};
+    
+    plot_data = xdata;
+    plot_data(plot_data==0) = [];
+    plot_data(isnan(plot_data)) = [];
+    plot_data(isinf(plot_data)) = [];
+    
+    if i==7
+        plot_data = plot_data(log(plot_data) > (mean(log(plot_data))-2.*std(log(plot_data))));
+    end
+    
+    pd = fitdist(plot_data,'Exponential');
+    
+    disp(pd.mu);
+    
+    %disp(mean(plot_data.^2));
+    
+    [xBinMeans,yBinMeans,y_vals,mu_val,sigma_val] = fitlogncdf(plot_data,30);
+    mu = [mu;mu_val];
+    sigma = [sigma;sigma_val];
+    deviation = [deviation;std(log(plot_data))];
+    mean_val = [mean_val;mean(log(plot_data))];
+    pd = makedist('Lognormal','mu',mu_val,'sigma',sigma_val);
+    
+    if i==8
+        [N,edges] = histcounts(log(plot_data),15);
+    else
+        [N,edges] = histcounts(log(plot_data),20);
+    end
+
+    edge_difs = exp(edges(2:end)) - exp(edges(1:end-1));
+    edges = exp((edges(2:end) + edges(1:end-1)) ./ 2);
+    x = edges;
+    y = pdf(pd,x);
+    y_fit = y.*(edge_difs.*sum(N));
+    y_empirical = N;    
+    y_max = max(y_fit);
+    y_fit = y_fit ./ y_max;
+    y_empirical = y_empirical ./ y_max;
+    %plot(x,y_fit,'-','LineWidth',1,'MarkerFaceColor',colors(i,:),'Color',colors(i,:));
+    %plot(x,y_fit,'-','LineWidth',0.75,'MarkerFaceColor',colors(i,:),'Color',colors(i,:),'HandleVisibility','off');
+    %scatter(edges,y_empirical,20,colors(i,:),'filled')
+    scatter(edges(y_empirical~=0),y_empirical(y_empirical~=0),10,colors(i,:),'o','LineWidth',1.5);
+    mse = [mse;goodnessOfFit(y_empirical,y_fit,'MSE')];
+    legend_strings = [legend_strings,label_strings(i)];
+    if Use_Fits
+        %legend_strings = [legend_strings,strcat("Fit: \mu=",string(round(exp(mu_val),2)),", \sigma=",string(round(sigma_val,2)))];
+    end
+    set(gca, 'XScale', 'log')
+    
+    if i==8
+        xlim([10^(-1.6) 10^1])
+    elseif i==7
+        xlim([10^(-1.4) 10^0])
+    else
+        xlim([10^(-2) 10^1])
+    end
+    ylim([0 1.4])
+    title(label_strings(i))
+    
+    hold off
+    
+    if i==8
+        xticks(logspace(-1,1,3));
+        xticklabels(["10^{-1}","10^{0}","10^{1}"]);
+    elseif i==7
+        xticks(logspace(-1,0,2));
+        xticklabels(["10^{-1}","10^{0}"]);
+    else
+        xticks(logspace(-1,1,3));
+        xticklabels(["10^{-1}","10^{0}","10^{1}"]);
+    end
+    
+    if i==2 || i==3 || i==4 || i==6 || i==7 || i==8
+        set(gca, 'YTick', []);
+    else
+        set(gca, 'YTick', [0 0.5 1]);
+    end
+    
+    ax = gca;
+    
+    ax.FontSize = 20;
+    
+    ax.TickLength = [0.06, 0.025];
+    ax.LineWidth = 0.6;
+    
+    set(ax, 'Box', 'off');
+    
+    ax.XTick = ax.XTick;
+    ax.YTick = ax.YTick;
+    
+end
+han=axes(fig,'visible','off');
+han.XLabel.Visible='on';
+han.YLabel.Visible='on';
+ylabel(han,"P(\rho)");
+%xlabel(han,"\rho (\mum^{-1})");
+xlabel(han,"$\rho (\mu m^{-1})$",'Interpreter','Latex');
+%sgtitle("Neuron Synapse Density PDF - $P(\rho)=\frac{1}{\rho\sigma\sqrt{2\pi}}e^{\frac{-(ln(\rho)-\mu_{*})^2}{2\sigma^2}} $, $\mu_{*}=e^{\mu}$",'Interpreter','latex', 'FontSize', 16);
+sgtitle("Neuron Synapse Density",'Interpreter','latex', 'FontSize', 24);
+
+ax = gca;
+ax.LooseInset = [0.08 0 0 0];
+
+cd ..
+cd ..
+cd Figures/Figure2
+
+pos = get(gcf, 'Position');
+set(gcf, 'PaperUnits', 'inches');
+set(gcf, 'PaperSize', [pos(3)/100, pos(4)/100]);
+set(gcf, 'PaperPosition', [0 0 pos(3)/100 pos(4)/100]);
+set(gcf, 'PaperPositionMode', 'auto');
+print('2D.pdf', '-dpdf', '-painters', '-bestfit');
+
+cd ..
+cd ..
+cd FigureGeneration/HelperFunctions
+
+%% Figure 2E
+
+figure('Renderer', 'painters', 'Position', [10 10 900 600])
+
+mu = [];
+sigma = [];
+mse = [];
+
+all_plot_data = [];
+
+dens_resc_data = cell(8,1);
+
+legend_strings = [];
+hold on
+for i=2:length(table_data)
+    
+    xdata = Local_Dens_Data{i-1,1};
+    
+    plot_data = xdata;
+    plot_data(plot_data==0) = [];
+    plot_data(isnan(plot_data)) = [];
+    plot_data(isinf(plot_data)) = [];
+    
+    plot_data = log(plot_data);
+    plot_data = plot_data - mean(plot_data);
+    plot_data = plot_data ./ std(plot_data);
+    
+    dens_resc_data{i,1} = plot_data;
+    
+    plot_data = exp(plot_data);
+    
+    if balanced_sampling
+        subsample = datasample(plot_data,sample_counts);
+        all_plot_data = [all_plot_data;subsample];
+    else
+        all_plot_data = [all_plot_data;plot_data];
+    end
+
+    [xBinMeans,yBinMeans,y_vals,mu_val,sigma_val] = fitlogncdf(plot_data,30);
+    mu = [mu;mu_val];
+    sigma = [sigma;sigma_val];
+    pd = makedist('Lognormal','mu',mu_val,'sigma',sigma_val);
+
+    [N,edges] = histcounts(log(plot_data));
+    
+    edge_difs = exp(edges(2:end)) - exp(edges(1:end-1));
+    edges = exp((edges(2:end) + edges(1:end-1)) ./ 2);
+    x = edges;
+    y = pdf(pd,x);
+    y_fit = y.*(edge_difs.*sum(N));
+    y_empirical = N;    
+    y_max = max(y_fit);
+    y_fit = y_fit ./ y_max;
+    y_empirical = y_empirical ./ y_max;
+    
+    scatter(edges,y_empirical,40,colors(i,:),'filled')
+    
+    if i==6
+        [N,edges] = histcounts(log(plot_data),100);
+    else
+        [N,edges] = histcounts(log(plot_data),20);
+    end
+    
+    edge_difs = exp(edges(2:end)) - exp(edges(1:end-1));
+    edges = exp((edges(2:end) + edges(1:end-1)) ./ 2);
+    x = edges;
+    y = pdf(pd,x);
+    y_fit = y.*(edge_difs.*sum(N));
+    y_empirical = N;    
+    y_max = max(y_fit);
+    y_fit = y_fit ./ y_max;
+    y_empirical = y_empirical ./ y_max;
+    
+    % This time using FlyWire for the line. All of these have the same mu
+    % and sigma, and the choice is just based on which has the most points
+    % for smoothness
+    
+    if i==6
+        plot(x,y_fit,'-','LineWidth',1,'MarkerFaceColor',[0 0 0],'Color',[0 0 0],'HandleVisibility','off');
+    end
+
+    mse = [mse;goodnessOfFit(y_empirical,y_fit,'MSE')];
+    %legend_strings = [legend_strings,label_strings(i)];
+    %legend_strings = [legend_strings,strcat("Fit: \mu=",string(round(exp(mu_val),2)),", \sigma=",string(round(sigma_val,2)))];
+end
+hold off
+set(gca, 'XScale', 'log')
+%legend(legend_strings,"Location",'best')
+xlabel("$\overline{\rho} = exp(\frac{\ln(\rho) - \mu_{\rho}}{\sigma_{\rho}})$", 'Interpreter','Latex');
+ylabel("$P(\overline{\rho})$", 'Interpreter','Latex');
+%title("Neuron Synapse Density Rescaled - $P(\overline{\rho})=\frac{1}{\overline{\rho}\sigma\sqrt{2\pi}}e^{\frac{-(ln(\overline{\rho})-\mu)^2}{2\sigma^2}}$",'Interpreter','latex', 'FontSize', 16);
+xlim([10^(-2) 10^2])
+
+cd ..
+cd ..
+cd Figures/Figure2
+
+pos = get(gcf, 'Position');
+set(gcf, 'PaperUnits', 'inches');
+set(gcf, 'PaperSize', [pos(3)/100, pos(4)/100]);
+set(gcf, 'PaperPosition', [0 0 pos(3)/100 pos(4)/100]);
+set(gcf, 'PaperPositionMode', 'auto');
+print('2E.pdf', '-dpdf', '-painters', '-bestfit');
+
+cd ..
+cd ..
+cd FigureGeneration/HelperFunctions
+
+%% Figure 2F
+
+default_colors = [0 0.4470 0.7410;0.8500 0.3250 0.0980;0.9290 0.6940 0.1250;0.4940 0.1840 0.5560];
+
+KSSTATs_Array = [];
+
+fig = figure('Renderer', 'painters', 'Position', [10 10 900 600]);
+
+for j=1:size(Local_Dens_Data,1)
+
+    plot_data = Local_Dens_Data{j,1};
+
+    plot_data(plot_data==0) = [];
+    plot_data(isnan(plot_data)) = [];
+    plot_data(isinf(plot_data)) = [];
+
+    KSSTATs = KSSTAT_Lognormal3(plot_data);
+
+    KSSTATs_Array = [KSSTATs_Array,KSSTATs];
+
+end
+
+hold on
+substats = KSSTATs_Array';
+plot(substats(:,1:end-1),':.','LineWidth',2,'MarkerSize',25)
+plot(substats(:,end),'.-','LineWidth',2.5,'MarkerSize',25)
+%plot(KSSTATs_All{i}',':','LineWidth',2)
+hold off
+%legend(["Poisson","Exponential","Power Law","LN Fit"],"Location",'northeast')
+%ylabel("KS Statistic (Lower Value Indicates Better Fit)",'FontSize',12)
+%xlabel("Measurement",'FontSize',12)
+xticks([1,2,3,4,5,6,7])
+
+label_strings2 = strcat(label_strings,"(");
+label_strings2 = extractBefore(label_strings2,"(");
+
+xticklabels(label_strings2(2:end))
+ax = gca;
+%title(Quantity_Labels(i),'FontSize',16)
+
+ylim([0 0.8])
+
+han=axes(fig,'visible','off');
+han.XLabel.Visible='on';
+han.YLabel.Visible='on';
+ylabel(han,'KS Statistic');
+%xlabel(han,'Dataset');
+
+cd ..
+cd ..
+cd Figures/Figure2
+
+pos = get(gcf, 'Position');
+set(gcf, 'PaperUnits', 'inches');
+set(gcf, 'PaperSize', [pos(3)/100, pos(4)/100]);
+set(gcf, 'PaperPosition', [0 0 pos(3)/100 pos(4)/100]);
+set(gcf, 'PaperPositionMode', 'auto');
+print('2F.pdf', '-dpdf', '-painters', '-bestfit');
 
 cd ..
 cd ..
