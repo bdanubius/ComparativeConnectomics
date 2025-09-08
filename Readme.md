@@ -11,7 +11,7 @@ This repository contains the code and data access to reproduce the results of [o
 This directory contains subfolders for each system (e.g., Larva, FlyWire). Within each system’s subdirectory, there are two folders:
 
 #### Skeletons/ 
-– Raw skeleton data (.swc files) for each dataset.
+– Raw skeleton data (.swc files) for each dataset. Download using our instructions, or with files available at: https://zenodo.org/records/16802589.
 
 #### Synapses/ 
 – Raw synapse data for each dataset.
@@ -44,7 +44,7 @@ Figure 2 Generation – Uses aggregated data spreadsheets to reproduce Figure 2.
 
 Helper Functions – Contains additional functions used for plotting.
 
-More figure scripts will be added in the future.
+Some larger intermediate files are provided at: https://zenodo.org/records/16802589.
 
 ### Figures/
 
@@ -61,10 +61,6 @@ If you have downloaded the GitHub version of this project, only the _Drosophila_
 If you have downloaded the full dataset, all scripts should work as expected, including data and processed results.
 
 Regardless of the version, all datasets include the final aggregated spreadsheets (From Step 5: Data Aggregation), enabling figure reproduction.
-
-## Future Updates
-
-We plan to expand the Figure_Generation/ directory with additional scripts to facilitate figure reproduction and analysis.
 
 For any issues or questions, please feel free to open an issue or reach out.
 
