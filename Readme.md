@@ -2,7 +2,7 @@
 
 Thank you for your interest in our project. 
 
-This repository contains the code and data access to reproduce the results of [our paper](https://www.biorxiv.org/content/10.1101/2025.02.27.640551v1), organized into several directories for ease of use. Below is a description of the folder structure and contents.
+This repository contains the code and data access to reproduce the results of [our paper](https://www.biorxiv.org/content/10.1101/2025.02.27.640551v1), organized into several directories for ease of use. Below is a description of the folder structure and contents. Additional files, and the SI generation code, exceeded the Github storage limits, and thus can be found here: https://storage.googleapis.com/connectome-additional-data/Archive.zip.
 
 ## Directory Structure
 
@@ -11,7 +11,7 @@ This repository contains the code and data access to reproduce the results of [o
 This directory contains subfolders for each system (e.g., Larva, FlyWire). Within each system’s subdirectory, there are two folders:
 
 #### Skeletons/ 
-– Raw skeleton data (.swc files) for each dataset. Download using our instructions, or with files available at: https://zenodo.org/records/16802589.
+– Raw skeleton data (.swc files) for each dataset. Download using our instructions, or with files available at: https://storage.googleapis.com/connectome-additional-data/Archive.zip.
 
 #### Synapses/ 
 – Raw synapse data for each dataset.
